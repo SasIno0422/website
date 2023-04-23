@@ -6,21 +6,21 @@ export default function RegisterPage() {
       <div className="max-w-2xl mx-auto bg-white p-16">
         <form>
           <div className="grid gap-6 mb-6 lg:grid-cols-2">
-            <div>
-              <label
-                htmlFor="first_name"
-                className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
-              >
-                First name
-              </label>
+            <div><label
+              htmlFor="first_name"
+              className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+            >
+              First name
+            </label>
               <input
                 type="text"
                 id="first_name"
                 className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                placeholder="John"
+                placeholder="Juan"
                 required
               />
             </div>
+
             <div>
               <label
                 htmlFor="last_name"
@@ -32,72 +32,93 @@ export default function RegisterPage() {
                 type="text"
                 id="last_name"
                 className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                placeholder="Doe"
+                placeholder="Dela Cruz"
                 required
               />
             </div>
+
             <div>
               <label
-                htmlFor="company"
+                htmlFor="Gender"
                 className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
               >
-                Company
+                Gender
               </label>
               <input
                 type="text"
-                id="company"
+                id="Gender"
                 className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                placeholder="Flowbite"
+                placeholder="M or F"
                 required
               />
             </div>
+
             <div>
               <label
-                htmlFor="phone"
+                htmlFor="Birthday"
                 className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
               >
-                Phone number
+                Birthdate
               </label>
               <input
-                type="tel"
-                id="phone"
-                className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                placeholder="123-45-678"
-                pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
-                required
-              />
-            </div>
-            <div>
-              <label
-                htmlFor="website"
-                className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
-              >
-                Website URL
-              </label>
-              <input
-                type="url"
-                id="website"
-                className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                placeholder="flowbite.com"
-                required
-              />
-            </div>
-            <div>
-              <label
-                htmlFor="visitors"
-                className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
-              >
-                Unique visitors (per month)
-              </label>
-              <input
-                type="number"
-                id="visitors"
+                type="text"
+                id="Birthdate"
                 className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                 placeholder=""
                 required
               />
             </div>
+
+            <div>
+              <label
+                htmlFor="company"
+                className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+              >
+                Age
+              </label>
+              <input
+                type="text"
+                id="company"
+                className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                placeholder="15-30"
+                required
+              />
+            </div>
+
+            <div>
+              <label
+                htmlFor="phone"
+                className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+              >
+                Cellphone Number (If there's any)
+              </label>
+              <input
+                type="tel"
+                id="phone"
+                className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                placeholder="09123456789"
+                pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+                required
+              />
+            </div>
+
           </div>
+
+          <div>
+            <label
+              htmlFor="Upload Photo"
+              className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+            >
+              Upload Photo
+            </label>
+            <input
+              type="input"
+              id="Upload Photo"
+              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              placeholder="1x1 (if available) or any clear with white background photo"
+              required />
+          </div>
+
           <div className="mb-6">
             <label
               htmlFor="email"
@@ -109,10 +130,11 @@ export default function RegisterPage() {
               type="email"
               id="email"
               className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-              placeholder="john.doe@company.com"
+              placeholder="Juan_DelaCruz@gmail.com"
               required
             />
           </div>
+
           <div className="mb-6">
             <label
               htmlFor="password"
@@ -128,6 +150,7 @@ export default function RegisterPage() {
               required
             />
           </div>
+
           <div className="mb-6">
             <label
               htmlFor="confirm_password"
@@ -143,6 +166,7 @@ export default function RegisterPage() {
               required
             />
           </div>
+
           <div className="flex items-start mb-6">
             <div className="flex items-center h-5">
               <input
@@ -153,6 +177,7 @@ export default function RegisterPage() {
                 required
               />
             </div>
+
             <label
               htmlFor="remember"
               className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-400"
@@ -160,16 +185,17 @@ export default function RegisterPage() {
               I agree with the{" "}
               <a
                 href="#"
-                className="text-blue-600 hover:underline dark:text-blue-500"
+                className="text-blue-600 hover:underline dark:text-purple-500"
               >
                 terms and conditions
               </a>
               .
             </label>
           </div>
+
           <button
             type="submit"
-            className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+            className="text-white bg-purple-500 hover:bg-purple-500 focus:ring-4 focus:outline-none focus:ring-purple-500 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-purple-500 dark:hover:bg-purple-500 dark:focus:ring-purple-500"
           >
             Submit
           </button>
